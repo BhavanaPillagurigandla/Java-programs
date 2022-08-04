@@ -15,7 +15,7 @@ public class Bhavana
 		int MatBcol=sc.nextInt();
 		int MatA[][]=new int[MatArow][MatAcol];
 		int MatB[][]=new int[MatBrow][MatBcol];
-		if(MatArow==MatBcol&&MatAcol==MatBrow)
+		if(MatArow==MatBrow&&MatAcol==MatBcol)
 		{
 			for(int i=0;i<MatA.length;i++)
 			{
@@ -39,7 +39,7 @@ public class Bhavana
 			{
 				for(int j=0;j<MatA[i].length;j++)
 				{
-					System.out.print(MatA[i][j]+MatB[j][i]+" ");
+					System.out.print(MatA[i][j]+MatB[i][j]+" ");
 				}
 				System.out.println();
 			}
